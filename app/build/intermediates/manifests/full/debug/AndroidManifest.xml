@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="27" />
+
     <!-- adding internet permission -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,19 +15,25 @@
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Main App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.hp.login.MainActivity" >
+        <activity android:name="com.example.hp.login.Activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.hp.login.LoginActivity" />
-        <activity android:name="com.example.hp.login.ProfileActivity" />
+        <activity android:name="com.example.hp.login.Activity.MainActivity" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.hp.login.Activity.ProfileActivity" />
+        <activity android:name="com.example.hp.login.Activity.ArticleActivity" />
     </application>
 
 </manifest>

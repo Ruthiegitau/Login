@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+android:background="@drawable/gradient"
+tools:context=".Activity.LoginActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logo_1"
+        android:layout_marginTop="20dp"
+        />
+
 
 
 
@@ -13,35 +27,47 @@ android:layout_height="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:id="@+id/linearLayout">
+
 
 
         <EditText
             android:id="@+id/editTextPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="317dp"
+            android:layout_height="59dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_button"
             android:hint="Phone"
             android:inputType="phone" />
 
+
         <EditText
             android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="317dp"
+            android:layout_height="57dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/user_button"
             android:fontFamily="sans-serif"
             android:hint="Password"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/buttonLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="317dp"
+            android:layout_height="57dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:text="Login" />
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_button"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            />
 
         <TextView
             android:id="@+id/textViewRegister"
@@ -50,8 +76,11 @@ android:layout_height="match_parent"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:text="Dont' have an account?\nRegister Here"
+            android:textColor="#fff"
             android:textAlignment="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
 
     </LinearLayout>
 
