@@ -4,121 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient"
     tools:context=".Activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="50dp"
         android:padding="10dp">
 
 
         <EditText
             android:id="@+id/editTextfirst_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/user_button"
             android:hint="First name"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editTextsir_name"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
             android:layout_marginTop="8dp"
-            android:hint="sir name"
+            android:background="@drawable/user_button"
+            android:hint="sur name"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/editTextemail_address"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:hint="Email"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/user_button"
             android:inputType="textEmailAddress" />
 
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:fontFamily="sans-serif"
             android:hint="Password"
+            android:background="@drawable/user_button"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:inputType="textPassword" />
 
 
         <EditText
             android:id="@+id/editTextbirth_date"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
-            android:hint="birth day"
+            android:hint="birthday"
+            android:background="@drawable/user_button"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:inputType="text" />
 
-        <EditText
-            android:id="@+id/edittextedit_token"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:hint="Token"
-            android:inputType="text" />
+
 
         <EditText
             android:id="@+id/editTextPhone"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/user_button"
             android:hint="phone"
             android:inputType="phone" />
 
 
-
-
-
-        <RadioGroup
-            android:id="@+id/radioGender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radioButtonMale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="Male" />
-
-
-            <RadioButton
-                android:id="@+id/radioButtonFemale"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Female" />
-
-        </RadioGroup>
-
         <Button
             android:id="@+id/buttonRegister"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/login_button"
+            android:textColor="#fff"
+            android:textAllCaps="true"
+            android:textSize="17dp"
             android:text="Register" />
 
         <TextView
             android:id="@+id/textViewLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="0dp"
             android:layout_marginTop="8dp"
             android:text="Already Registered?\nLogin Here"
             android:textAlignment="center"

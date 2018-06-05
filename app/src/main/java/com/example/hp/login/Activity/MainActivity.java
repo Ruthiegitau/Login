@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -48,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         editTextPhone = (EditText) findViewById(R.id.editTextPhone);
         editTextbirth_date = (EditText) findViewById(R.id.editTextbirth_date);
-        edittextedit_token = (EditText) findViewById(R.id.edittextedit_token);
-        radioGroupGender = (RadioGroup) findViewById(R.id.radioGender);
+//        edittextedit_token = (EditText) findViewById(R.id.edittextedit_token);
+//        radioGroupGender = (RadioGroup) findViewById(R.id.radioGender);
 
 
         findViewById(R.id.buttonRegister).setOnClickListener(new View.OnClickListener() {
@@ -80,9 +79,9 @@ public class MainActivity extends AppCompatActivity {
         final String password = editTextPassword.getText().toString().trim();
         final String birth_date = editTextbirth_date.getText().toString().trim();
         final String phone_number = editTextPhone.getText().toString().trim();
-        final String _token = edittextedit_token.getText().toString().trim();
+//        final String _token = edittextedit_token.getText().toString().trim();
 
-        final String gender = ((RadioButton) findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
+//        final String gender = ((RadioButton) findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
 
         //first we will do the validations
 
@@ -129,8 +128,8 @@ public class MainActivity extends AppCompatActivity {
                 params.put("password", password);
                 params.put("phone_number", phone_number);
                 params.put("birth_date", birth_date);
-                params.put("_token", _token);
-                params.put("gender", gender);
+//                params.put("_token", _token);
+//                params.put("gender", gender);
 
                 //returing the response
                 return requestHandler.sendPostRequest(URLs.URL_REGISTER, params);

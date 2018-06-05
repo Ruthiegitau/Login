@@ -6,23 +6,6 @@ android:layout_height="match_parent"
 android:background="@drawable/gradient"
 tools:context=".Activity.LoginActivity">
 
-
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/linearLayout"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/logo_1"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        />
-
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +13,14 @@ tools:context=".Activity.LoginActivity">
         android:orientation="vertical"
         android:padding="10dp"
         android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:layout_above="@+id/linearLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo_1" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -40,11 +31,13 @@ tools:context=".Activity.LoginActivity">
                 android:id="@+id/editTextPhone"
                 android:layout_width="317dp"
                 android:layout_height="59dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="22dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="22dp"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
                 android:background="@drawable/user_button"
+                android:hint="Phone"
                 android:inputType="phone" />
 
             <ImageView
@@ -65,19 +58,20 @@ tools:context=".Activity.LoginActivity">
             android:layout_height="wrap_content">
 
 
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="317dp"
-            android:layout_height="57dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/user_button"
-            android:layout_marginRight="24dp"
-            android:fontFamily="sans-serif"
-            android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="317dp"
+                android:layout_height="59dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:background="@drawable/user_button"
+                android:hint="Password"
+                android:inputType="textPassword"
+                />
+
 
             <ImageView
                 android:layout_width="30dp"
@@ -100,10 +94,11 @@ tools:context=".Activity.LoginActivity">
             android:layout_width="317dp"
             android:layout_height="57dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/login_button"
             android:text="Login"
-            android:layout_gravity="center"
+            android:layout_marginRight="22dp"
+            android:layout_marginLeft="24dp"
             android:textAllCaps="true"
             android:textColor="#fff"
             />
@@ -112,8 +107,8 @@ tools:context=".Activity.LoginActivity">
             android:id="@+id/textViewRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="40dp"
             android:text="Don't have an account?\nRegister Here"
             android:textColor="#fff"
             android:textAlignment="center"
