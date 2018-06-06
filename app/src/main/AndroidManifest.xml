@@ -10,8 +10,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Main App"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:supportsRtl="true">
         <activity android:name=".Activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activity.ProfileActivity" />
-        <activity android:name=".Activity.ArticleActivity"></activity>
+        <activity android:name=".MoviesActivity"></activity>
     </application>
 
 </manifest>

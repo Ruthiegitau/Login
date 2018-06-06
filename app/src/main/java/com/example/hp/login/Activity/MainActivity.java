@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.hp.login.MoviesActivity;
 import com.example.hp.login.R;
 import com.example.hp.login.RequestHandler;
 import com.example.hp.login.SharedPrefManager;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //if the user is already logged in we will directly start the profile activity
         if (SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
-            startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this, MoviesActivity.class));
             return;
         }
 
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         editTextPhone = (EditText) findViewById(R.id.editTextPhone);
         editTextbirth_date = (EditText) findViewById(R.id.editTextbirth_date);
-//        edittextedit_token = (EditText) findViewById(R.id.edittextedit_token);
+        edittextedit_token = (EditText) findViewById(R.id.edittextedit_token);
 //        radioGroupGender = (RadioGroup) findViewById(R.id.radioGender);
 
 
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         final String password = editTextPassword.getText().toString().trim();
         final String birth_date = editTextbirth_date.getText().toString().trim();
         final String phone_number = editTextPhone.getText().toString().trim();
-//        final String _token = edittextedit_token.getText().toString().trim();
+        final String _token = edittextedit_token.getText().toString().trim();
 
 //        final String gender = ((RadioButton) findViewById(radioGroupGender.getCheckedRadioButtonId())).getText().toString();
 
@@ -128,8 +129,7 @@ public class MainActivity extends AppCompatActivity {
                 params.put("password", password);
                 params.put("phone_number", phone_number);
                 params.put("birth_date", birth_date);
-//                params.put("_token", _token);
-//                params.put("gender", gender);
+                params.put("_token", _token);
 
                 //returing the response
                 return requestHandler.sendPostRequest(URLs.URL_REGISTER, params);
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
 
                         //starting the profile activity
                         finish();
-                        startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                        startActivity(new Intent(getApplicationContext(), MoviesActivity.class));
 
                     }
                 } catch (JSONException e) {

@@ -18,8 +18,7 @@
         android:label="Main App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:testOnly="true" >
         <activity android:name="com.example.hp.login.Activity.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.hp.login.Activity.ProfileActivity" />
-        <activity android:name="com.example.hp.login.Activity.ArticleActivity" />
+        <activity android:name="com.example.hp.login.MoviesActivity" />
     </application>
 
 </manifest>

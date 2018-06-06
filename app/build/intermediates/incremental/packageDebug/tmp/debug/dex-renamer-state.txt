@@ -1,4 +1,4 @@
-#Tue Jun 05 16:06:31 EAT 2018
+#Mon Jan 01 03:35:25 EAT 2018
 base.0=/Users/Pato/Desktop/AndroidStudioProjects/Login/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -10,6 +10,7 @@
     import android.widget.ProgressBar;
     import android.widget.Toast;
 
+    import com.example.hp.login.MoviesActivity;
     import com.example.hp.login.R;
     import com.example.hp.login.RequestHandler;
     import com.example.hp.login.SharedPrefManager;
@@ -118,7 +119,7 @@
 
                             //starting the profile activity
                             finish();
-                            startActivity(new Intent(getApplicationContext(), ProfileActivity.class));
+                            startActivity(new Intent(getApplicationContext(), MoviesActivity.class));
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
